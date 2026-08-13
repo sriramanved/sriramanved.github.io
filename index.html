@@ -19,19 +19,17 @@
         </p>
 
         <nav class="links" aria-label="Profile links">
-          <a href="mailto:YOUR_EMAIL@columbia.edu">Email</a>
+          <a href="mailto:ved@cs.columbia.edu">Email</a>
           <span>·</span>
-          <a href="YOUR_GOOGLE_SCHOLAR_URL">Scholar</a>
+          <a href="https://scholar.google.com/scholar?q=%22Ved+Sriraman%22">Scholar</a>
           <span>·</span>
-          <a href="YOUR_GITHUB_URL">GitHub</a>
-          <span>·</span>
-          <a href="assets/ved-sriraman-cv.pdf">CV</a>
+          <a href="https://github.com/sriramanved">GitHub</a>
         </nav>
 
         <div class="bio">
           <p>
             I am a PhD student in Computer Science at Columbia University,
-            advised by <a href="ADVISOR_URL">Adam Block</a>.
+            advised by <a href="https://abblock.github.io/">Adam Block</a>.
           </p>
           <p>
             My research studies the foundations of learning and decision-making,
@@ -51,10 +49,6 @@
         <div class="portrait-placeholder">
           <span>your photo</span>
         </div>
-        <!--
-          Replace the placeholder above with:
-          <img class="portrait" src="assets/profile.jpg" alt="Ved Sriraman" />
-        -->
       </div>
     </section>
 
@@ -65,66 +59,30 @@
 
       <article class="paper">
         <h3>
-          <a href="#">Noisy-Expert Alignment with Augmented Hellinger</a>
+          <a href="https://arxiv.org/abs/2606.30923">Behavior Cloning is Not All You Need: The Optimality of On-Policy Distillation for Noisy Expert Feedback</a>
         </h3>
-        <p class="authors">Ved Sriraman, collaborators</p>
+        <p class="authors">Ved Sriraman, Peihan Liu, Daniel Hsu, Adam Block</p>
+        <p class="venue">2026</p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2606.30923">paper</a></p>
+      </article>
+
+      <article class="paper">
+        <h3>
+          <a href="https://proceedings.mlr.press/v336/sriraman26a.html">Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment</a>
+        </h3>
+        <p class="authors">Ved Sriraman, Adam Block</p>
         <p class="venue">COLT 2026</p>
-        <p class="paper-note">
-          Learning from a noisy teacher using divergence-based structure that can
-          yield sharper guarantees under suitable coverage assumptions.
-        </p>
-        <p class="paper-links">
-          <a href="#">paper</a>
-          <span>·</span>
-          <a href="#">code</a>
-        </p>
+        <p class="paper-links"><a href="https://proceedings.mlr.press/v336/sriraman26a.html">paper</a></p>
       </article>
 
       <article class="paper">
         <h3>
-          <a href="#">On-Policy Distillation under Misspecification</a>
+          <a href="https://arxiv.org/abs/2506.00316">Active Learning via Regression Beyond Realizability</a>
         </h3>
-        <p class="authors">Ved Sriraman, collaborators</p>
-        <p class="venue">Work in progress</p>
-        <p class="paper-note">
-          Studying forward and reverse distillation objectives when the student is
-          capacity-limited and the available teacher may differ from the target of interest.
-        </p>
-        <p class="paper-links">
-          <a href="#">project</a>
-        </p>
+        <p class="authors">Atul Ganju, Shashaank Aiyer, Ved Sriraman, Karthik Sridharan</p>
+        <p class="venue">2025</p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2506.00316">paper</a></p>
       </article>
-
-      <article class="paper">
-        <h3>
-          <a href="#">Inference-Time Alignment under Reward Misspecification</a>
-        </h3>
-        <p class="authors">Ved Sriraman, collaborators</p>
-        <p class="venue">Research project</p>
-        <p class="paper-note">
-          Understanding when inference-time selection and pessimism improve
-          performance under imperfect rewards and distribution shift.
-        </p>
-        <p class="paper-links">
-          <a href="#">notes</a>
-        </p>
-      </article>
-
-      <div id="more-papers" class="more-papers" hidden>
-        <article class="paper">
-          <h3><a href="#">Another paper or project</a></h3>
-          <p class="authors">Authors</p>
-          <p class="venue">Venue, Year</p>
-          <p class="paper-note">
-            Add a one-sentence description only when it helps a visitor understand why the work matters.
-          </p>
-          <p class="paper-links"><a href="#">paper</a> <span>·</span> <a href="#">code</a></p>
-        </article>
-      </div>
-
-      <button id="toggle-papers" class="text-button" type="button" aria-expanded="false">
-        Show all research
-      </button>
     </section>
 
     <section class="section two-col">
@@ -132,15 +90,13 @@
         <h2>About</h2>
         <p>
           Before Columbia, I studied computer science at Cornell University.
-          You can use this section for a short academic background, teaching,
-          or a few personal details.
         </p>
       </div>
 
       <div>
         <h2>News</h2>
         <ul class="news">
-          <li><span class="date">2026</span> Add a recent paper, talk, award, or project update.</li>
+          <li><span class="date">2026</span> Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment appeared at COLT.</li>
           <li><span class="date">2025</span> Started my PhD at Columbia.</li>
         </ul>
       </div>
@@ -150,23 +106,5 @@
       <p>Last updated August 2026.</p>
     </footer>
   </main>
-
-  <script>
-    const button = document.getElementById("toggle-papers");
-    const more = document.getElementById("more-papers");
-
-    button.addEventListener("click", () => {
-      const isHidden = more.hasAttribute("hidden");
-      if (isHidden) {
-        more.removeAttribute("hidden");
-        button.textContent = "Show selected research";
-        button.setAttribute("aria-expanded", "true");
-      } else {
-        more.setAttribute("hidden", "");
-        button.textContent = "Show all research";
-        button.setAttribute("aria-expanded", "false");
-      }
-    });
-  </script>
 </body>
 </html>
