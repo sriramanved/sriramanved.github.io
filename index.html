@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ved Sriraman — PhD student in Computer Science at Columbia University." />
+  <title>Ved Sriraman</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="intro">
+        <h1>Ved Sriraman</h1>
+        <p class="role">
+          PhD Student, Computer Science<br />
+          Columbia University
+        </p>
+
+        <nav class="links" aria-label="Profile links">
+          <a href="mailto:YOUR_EMAIL@columbia.edu">Email</a>
+          <span>·</span>
+          <a href="YOUR_GOOGLE_SCHOLAR_URL">Scholar</a>
+          <span>·</span>
+          <a href="YOUR_GITHUB_URL">GitHub</a>
+          <span>·</span>
+          <a href="assets/ved-sriraman-cv.pdf">CV</a>
+        </nav>
+
+        <div class="bio">
+          <p>
+            I am a PhD student in Computer Science at Columbia University,
+            advised by <a href="ADVISOR_URL">Adam Block</a>.
+          </p>
+          <p>
+            My research studies the foundations of learning and decision-making,
+            with a current focus on language-model post-training, imitation
+            learning, reinforcement learning, and inference-time algorithms.
+          </p>
+          <p>
+            I am particularly interested in understanding how learning algorithms
+            behave when the teacher, reward, or model class is imperfect—and in
+            turning those insights into practical methods for training and
+            improving language models.
+          </p>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <div class="portrait-placeholder">
+          <span>your photo</span>
+        </div>
+        <!--
+          Replace the placeholder above with:
+          <img class="portrait" src="assets/profile.jpg" alt="Ved Sriraman" />
+        -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Selected Research</h2>
+      </div>
+
+      <article class="paper">
+        <h3>
+          <a href="#">Noisy-Expert Alignment with Augmented Hellinger</a>
+        </h3>
+        <p class="authors">Ved Sriraman, collaborators</p>
+        <p class="venue">COLT 2026</p>
+        <p class="paper-note">
+          Learning from a noisy teacher using divergence-based structure that can
+          yield sharper guarantees under suitable coverage assumptions.
+        </p>
+        <p class="paper-links">
+          <a href="#">paper</a>
+          <span>·</span>
+          <a href="#">code</a>
+        </p>
+      </article>
+
+      <article class="paper">
+        <h3>
+          <a href="#">On-Policy Distillation under Misspecification</a>
+        </h3>
+        <p class="authors">Ved Sriraman, collaborators</p>
+        <p class="venue">Work in progress</p>
+        <p class="paper-note">
+          Studying forward and reverse distillation objectives when the student is
+          capacity-limited and the available teacher may differ from the target of interest.
+        </p>
+        <p class="paper-links">
+          <a href="#">project</a>
+        </p>
+      </article>
+
+      <article class="paper">
+        <h3>
+          <a href="#">Inference-Time Alignment under Reward Misspecification</a>
+        </h3>
+        <p class="authors">Ved Sriraman, collaborators</p>
+        <p class="venue">Research project</p>
+        <p class="paper-note">
+          Understanding when inference-time selection and pessimism improve
+          performance under imperfect rewards and distribution shift.
+        </p>
+        <p class="paper-links">
+          <a href="#">notes</a>
+        </p>
+      </article>
+
+      <div id="more-papers" class="more-papers" hidden>
+        <article class="paper">
+          <h3><a href="#">Another paper or project</a></h3>
+          <p class="authors">Authors</p>
+          <p class="venue">Venue, Year</p>
+          <p class="paper-note">
+            Add a one-sentence description only when it helps a visitor understand why the work matters.
+          </p>
+          <p class="paper-links"><a href="#">paper</a> <span>·</span> <a href="#">code</a></p>
+        </article>
+      </div>
+
+      <button id="toggle-papers" class="text-button" type="button" aria-expanded="false">
+        Show all research
+      </button>
+    </section>
+
+    <section class="section two-col">
+      <div>
+        <h2>About</h2>
+        <p>
+          Before Columbia, I studied computer science at Cornell University.
+          You can use this section for a short academic background, teaching,
+          or a few personal details.
+        </p>
+      </div>
+
+      <div>
+        <h2>News</h2>
+        <ul class="news">
+          <li><span class="date">2026</span> Add a recent paper, talk, award, or project update.</li>
+          <li><span class="date">2025</span> Started my PhD at Columbia.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>Last updated August 2026.</p>
+    </footer>
+  </main>
+
+  <script>
+    const button = document.getElementById("toggle-papers");
+    const more = document.getElementById("more-papers");
+
+    button.addEventListener("click", () => {
+      const isHidden = more.hasAttribute("hidden");
+      if (isHidden) {
+        more.removeAttribute("hidden");
+        button.textContent = "Show selected research";
+        button.setAttribute("aria-expanded", "true");
+      } else {
+        more.setAttribute("hidden", "");
+        button.textContent = "Show all research";
+        button.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
+</body>
+</html>
