@@ -3,63 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ved Sriraman — PhD student in Computer Science at Columbia University." />
+  <meta name="description" content="Ved Sriraman — Computer Science PhD student at Columbia University." />
   <title>Ved Sriraman</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <main class="page">
+    <header class="site-header">
+      <a class="site-name" href="/">Ved Sriraman</a>
+      <nav class="links" aria-label="Profile links">
+        <a href="mailto:ved@cs.columbia.edu">Email</a>
+        <span>·</span>
+        <a href="https://scholar.google.com/scholar?q=%22Ved+Sriraman%22">Scholar</a>
+        <span>·</span>
+        <a href="https://github.com/sriramanved">GitHub</a>
+      </nav>
+    </header>
+
     <section class="hero">
-      <div class="intro">
-        <h1>Ved Sriraman</h1>
-        <p class="role">
-          PhD Student, Computer Science<br />
-          Columbia University
+      <div class="bio">
+        <p>
+          Hi, I'm Ved, a second-year Computer Science PhD student in the
+          <a href="https://theory.cs.columbia.edu/">Theory</a> and
+          <a href="https://www.cs.columbia.edu/areas/ai/">AI</a> groups at
+          <a href="https://www.columbia.edu/">Columbia University</a>, where I am fortunate to be advised by
+          <a href="https://abblock.github.io/">Adam Block</a>. I am also affiliated with
+          <a href="https://arni-institute.org/">Columbia ARNI</a>, and work closely with
+          <a href="https://dabagia.org/">Max Dabagia</a>.
         </p>
 
-        <nav class="links" aria-label="Profile links">
-          <a href="mailto:ved@cs.columbia.edu">Email</a>
-          <span>·</span>
-          <a href="https://scholar.google.com/scholar?q=%22Ved+Sriraman%22">Scholar</a>
-          <span>·</span>
-          <a href="https://github.com/sriramanved">GitHub</a>
-        </nav>
+        <p>
+          My research focuses on reinforcement learning and its applications to language models.
+          I aim to use theory and empirics in tandem to design algorithmic interventions with
+          provable guarantees. I’m currently working on the theoretical underpinnings of
+          on-policy distillation, disentangling the different factors that make this popular
+          post-training technique so effective in practice.
+        </p>
 
-        <div class="bio">
-          <p>
-            I am a PhD student in Computer Science at Columbia University,
-            advised by <a href="https://abblock.github.io/">Adam Block</a>.
-          </p>
-          <p>
-            My research studies the foundations of learning and decision-making,
-            with a current focus on language-model post-training, imitation
-            learning, reinforcement learning, and inference-time algorithms.
-          </p>
-          <p>
-            I am particularly interested in understanding how learning algorithms
-            behave when the teacher, reward, or model class is imperfect—and in
-            turning those insights into practical methods for training and
-            improving language models.
-          </p>
-        </div>
+        <p>
+          I received my B.S. in Computer Science from
+          <a href="https://www.cornell.edu/">Cornell University</a>, where I worked with
+          <a href="https://www.cs.cornell.edu/~sridharan/">Karthik Sridharan</a> and
+          <a href="https://sainyamgalhotra.com/">Sainyam Galhotra</a> on theoretical machine learning.
+        </p>
       </div>
 
       <div class="portrait-wrap">
-        <div class="portrait-placeholder">
-          <span>your photo</span>
-        </div>
+        <img class="portrait" src="assets/profile.jpg" alt="Ved Sriraman" />
       </div>
     </section>
 
     <section class="section">
-      <div class="section-heading">
-        <h2>Selected Research</h2>
-      </div>
+      <h2>Selected Research</h2>
 
       <article class="paper">
         <h3>
-          <a href="https://arxiv.org/abs/2606.30923">Behavior Cloning is Not All You Need: The Optimality of On-Policy Distillation for Noisy Expert Feedback</a>
+          <a href="https://arxiv.org/abs/2606.30923"><em>Behavior Cloning is Not All You Need: The Optimality of On-Policy Distillation for Noisy Expert Feedback</em></a>
         </h3>
         <p class="authors">Ved Sriraman, Peihan Liu, Daniel Hsu, Adam Block</p>
         <p class="venue">2026</p>
@@ -68,7 +68,7 @@
 
       <article class="paper">
         <h3>
-          <a href="https://proceedings.mlr.press/v336/sriraman26a.html">Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment</a>
+          <a href="https://proceedings.mlr.press/v336/sriraman26a.html"><em>Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment</em></a>
         </h3>
         <p class="authors">Ved Sriraman, Adam Block</p>
         <p class="venue">COLT 2026</p>
@@ -77,7 +77,7 @@
 
       <article class="paper">
         <h3>
-          <a href="https://arxiv.org/abs/2506.00316">Active Learning via Regression Beyond Realizability</a>
+          <a href="https://arxiv.org/abs/2506.00316"><em>Active Learning via Regression Beyond Realizability</em></a>
         </h3>
         <p class="authors">Atul Ganju, Shashaank Aiyer, Ved Sriraman, Karthik Sridharan</p>
         <p class="venue">2025</p>
@@ -85,21 +85,13 @@
       </article>
     </section>
 
-    <section class="section two-col">
-      <div>
-        <h2>About</h2>
-        <p>
-          Before Columbia, I studied computer science at Cornell University.
-        </p>
-      </div>
-
-      <div>
-        <h2>News</h2>
-        <ul class="news">
-          <li><span class="date">2026</span> Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment appeared at COLT.</li>
-          <li><span class="date">2025</span> Started my PhD at Columbia.</li>
-        </ul>
-      </div>
+    <section class="section news-section">
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">Jul 2026</span> <em>Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment</em> appeared at COLT 2026.</li>
+        <li><span class="date">Jun 2026</span> Posted <em>Behavior Cloning is Not All You Need</em>.</li>
+        <li><span class="date">Jun 2025</span> Posted <em>Active Learning via Regression Beyond Realizability</em>.</li>
+      </ul>
     </section>
 
     <footer>
